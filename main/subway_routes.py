@@ -1,4 +1,3 @@
-import json
 import requests
 
 # gets subway routes from mbta api
@@ -21,24 +20,3 @@ def getSubwayRoutes():
 
     # return the 'data' information from the json routes
     return routes["data"]
-
-# main driver of the program
-def main():
-    # get json data of subway routes
-    subwayRoutes = getSubwayRoutes()
-
-    print("Subway Routes:", end = " ")
-
-    # loop through all the routes in subwayRoutes
-    for i, route in enumerate(subwayRoutes):
-
-        # print the long name of the route
-        print(route['attributes']['long_name'], end = "")
-
-        # if not the last route in the list, follow the long name with ', '
-        if i < len(subwayRoutes) - 1:
-            print(", ", end = "")
-    print()
-
-# run main method
-main()
