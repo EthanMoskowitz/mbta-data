@@ -93,11 +93,6 @@ To run tests, run the following command
 ```
 
 
-## Documentation
-
-[Documentation](https://linktodocumentation)
-
-
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit/)
