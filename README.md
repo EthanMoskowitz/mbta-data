@@ -71,7 +71,7 @@ Clearing cache
 
 ## Demo
 
-Insert gif or link to demo
+![](https://github.com/EthanMoskowitz/mbta-data/blob/main/demo.gif)
 
 
 ## Running Tests
