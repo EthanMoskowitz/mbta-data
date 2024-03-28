@@ -1,3 +1,5 @@
+import os
+from dotenv import load_dotenv
 import requests
 
 # gets subway stops from mbta api
@@ -11,12 +13,21 @@ def getSubwayStops(route):
     # set the url for the get request
     url = "https://api-v3.mbta.com/stops"
 
+    # load environment variable
+    load_dotenv()
+
     # set parameters for get request to filter for given route stops
     # also includes generated api key for access to the api data
-    payload = {"filter[route]": routeID, "api_key": "fec1b0ff62e047ca972e2571a62cf156"}
+    payload = {"filter[route]": routeID, "api_key": os.environ.get('API_KEY')}
 
-    # utilize requests library to make a get request using the url and parameters
-    request = requests.get(url, params=payload)
+    # try get request
+    try:
+        # utilize requests library to make a get request using the url and parameters
+        request = requests.get(url, params=payload)
+    except Exception as exc:
+        # throw error is not successful
+        print("Error fetching data:", e)
+        raise
 
     # turn the get request into json form
     stops = request.json()

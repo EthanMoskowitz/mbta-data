@@ -1,4 +1,4 @@
-from myapp.app import app
+from src.app import app
 
 # main driver of the program
 def main():
@@ -6,4 +6,5 @@ def main():
     app()
 
 # run main
-main()
+if __name__ == "__main__":
+    main()

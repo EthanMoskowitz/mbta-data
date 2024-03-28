@@ -1,8 +1,12 @@
 init:
-	pip install -r requirements.txt
+	pip install -q -r requirements.txt
 
-run:
+run: init
 	python main.py
 
-tests:
+tests: init
 	pytest test
+
+clean:
+	find $(CURDIR) -type d -name "__pycache__" -exec rm -r {} +
+	find $(CURDIR) -type d -name ".pytest_cache" -exec rm -r {} +

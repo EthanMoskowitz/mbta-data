@@ -1,7 +1,7 @@
 import sys
 from io import StringIO
 import pytest
-from myapp.app import app
+from src.app import app
 
 # expected output from stdout
 expectedOutput = """Subway Routes: Red Line, Mattapan Trolley, Orange Line, Green Line B, Green Line C, Green Line D, Green Line E, Blue Line

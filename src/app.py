@@ -1,5 +1,5 @@
-from myapp.mymodule.subway_routes import getSubwayRoutes, findPathBetweenStops
-from myapp.mymodule.subway_stops import getSubwayStops, findMaxStops, findMinStops, getStopsWithRoutes
+from src.modules.subway_routes import getSubwayRoutes, findPathBetweenStops
+from src.modules.subway_stops import findMaxStops, findMinStops, getStopsWithRoutes
 
 # main application of the program
 def app():

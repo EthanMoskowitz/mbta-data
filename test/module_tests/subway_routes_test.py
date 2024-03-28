@@ -1,5 +1,5 @@
 import pytest
-from myapp.mymodule.subway_routes import *
+from src.modules.subway_routes import *
 
 # test getSubwayRoutes function with pytest framework
 def testGetSubwayRoutes():

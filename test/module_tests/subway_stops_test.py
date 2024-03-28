@@ -1,5 +1,5 @@
 import pytest
-from myapp.mymodule.subway_stops import *
+from src.modules.subway_stops import *
 
 # mock route using the Red Line
 mockRedLine = {'attributes': {'color': 'DA291C', 'description': 'Rapid Transit', 'direction_destinations': ['Ashmont/Braintree', 'Alewife'], 'direction_names': ['South', 'North'], 'fare_class': 'Rapid Transit', 'long_name': 'Red Line', 'short_name': '', 'sort_order': 10010, 'text_color': 'FFFFFF', 'type': 1}, 'id': 'Red', 'links': {'self': '/routes/Red'}, 'relationships': {'line': {'data': {'id': 'line-Red', 'type': 'line'}}}, 'type': 'route'}
