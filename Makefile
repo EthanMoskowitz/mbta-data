@@ -1,8 +1,8 @@
 init:
-	pip3 install -r requirements.txt --break-system-packages
+	pip install -r requirements.txt
 
 run:
-	python3 main/main.py
+	python main.py
 
 tests:
 	pytest test
